@@ -36,11 +36,19 @@ const config = {
                 screenshot: 'on',
                 video: 'on',
                 launchOptions: {
-                    args: ["--headless","--no-sandbox","--use-angle=gl"]
+                    args: [
+                                    '--use-gl=swiftshader',
+                                                '--disable-gpu-driver-bug-workarounds',
+                                                            '--disable-software-rasterizer',
+                                                                        '--ignore-gpu-blocklist',
+                                                                                    '--enable-webgl',
+                                                                                                '--no-sandbox'
+                                                                                        
+                    ]
                     // args: ["--no-sandbox"]
                 }
             },
-        },
+        }
     ],
 };
 
