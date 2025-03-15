@@ -36,6 +36,9 @@ test.describe('Testing 123', () => {
     })
 
     test("3. aquarium", async ({ page }) => {
+
+        // Listen for all console logs
+        page.on('console', msg => console.log(msg.text()));
         await page.goto(url3)
 
         await waitFor(5000);
