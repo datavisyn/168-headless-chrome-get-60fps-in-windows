@@ -36,7 +36,7 @@ const config = {
                 screenshot: 'on',
                 video: 'on',
                 launchOptions: {
-                    args: ["--headless","--no-sandbox","--use-angle=gl"]
+                    args: ["--enable-unsafe-swiftshader", "--headless","--no-sandbox","--use-angle=gl"]
                     /*
                     args: [
                                     '--use-gl=swiftshader',
