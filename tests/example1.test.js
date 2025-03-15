@@ -9,7 +9,7 @@ const currentTime = Date.now();
 
 const url1 = "chrome://gpu/";
 const url2 = "https://www.soft8soft.com/webglreport";
-const url3 = "https://mdn.github.io/dom-examples/webgl-examples/tutorial/sample1/"; // "https://molstar.org/me/viewer/?prefer-webgl1=1&pdb=3pqr"; // "https://molstar.org/viewer/?afdb=Q8W3K0";
+const url3 = "https://molstar.org/me/viewer/?prefer-webgl1=1&pdb=3pqr"; // "https://molstar.org/viewer/?afdb=Q8W3K0";
 
 test.beforeEach(async ({ page }, testInfo) => {
     testInfo.setTimeout(testInfo.timeout + 160000);
