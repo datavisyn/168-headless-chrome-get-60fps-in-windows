@@ -20,7 +20,7 @@ const config = {
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 2 : 0,
     workers: process.env.CI ? 3 : undefined,
-    reporter: 'list',
+    reporter: ['list', 'html'],
     use: {
         actionTimeout: 0,
         trace: 'on-first-retry',
